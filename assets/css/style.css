@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 120px; 
+    height: auto;
+    margin-right: 10px; 
+    border-radius: 5px;
+}
+
+.tagline {
+    color: rgb(105, 13, 13);
+    font-size: 30px; 
+    font-weight: bold;
+}
+
+.buttons {
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;  
+    margin: 40px;
+}
+
+.primary-btn {
+    background-color: hsl(0, 5%, 85%);  
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+
+    
+}
+
+
+.secondary-btn {
+    background-color: #F7F9F8; 
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.primary-btn:hover {
+    background-color: black;  /* Darker green on hover */
+    color: white;
+    transform: scale(1.1);  /* Slightly larger scale effect */
+}
+
+/* Hover Effect for Secondary Button */
+.secondary-btn:hover {
+    background-color: black;  /* Darker yellow on hover */
+    color: white;
+    transform: scale(1.1);  /* Slightly larger scale effect */
+}
+nav {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    /* border: 5px solid ; */
+    
+}
+
+.main-section {
+    display: flex;  /* Flexbox for side-by-side layout */
+    align-items: center;  /* Align items vertically */
+    justify-content: flex-start;  /* Align image and text to the left */
+    background-color:#5c5a5a1e;
+    padding: 10px;
+}
+
+/* Image Styling */
+.header-image {
+    flex: 1;  /* Allow the image to take up space */
+    width: 100%;
+}
+
+.header-image img {
+    width: 100%;  /* Make the image responsive */
+    max-width: 300px;  /* Set maximum width for the image */
+    height: 20px;  /* Maintain the aspect ratio */
+    border-radius: 10px;  /* Optional: Add rounded corners */
+    padding-right: 20px;
+}
+
+/* Text Styling */
+.header-text {
+    flex: 2;  /* Allow text to take up more space */
+    padding-left: 20px;  /* Add space between image and text */
+    margin: 20px;
+    /* margin-bottom: 40px; */
+    /* padding: 40px; */
+
+
+}
+
+.img{
+position: absolute;
+left: 700px;
+height: 80vh;
+margin-top: 100px;
+padding-top: 100px;
+width: 20%;
+
+}
+
+.header-text h1 {
+    font-size: 60px;
+    color: #333;
+    padding-bottom: 50px;
+    font-weight: bolder;
+}
+
+.header-text p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+.input-section {
+    display: block;
+    padding: 5px;
+    align-items: center;     
+    height: 100vh;           
+    text-align: center;      
+    flex-direction: column;
+
+}
+
+.input-item {
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    
+}
+
+.input-item button{
+   font-size: 16px;
+   width: 150px;
+   background-color: beige;
+   color: black;
+   border-radius: 3px;
+   font-weight: bold;
+   height: 50px; 
+   margin: 20px;
+   cursor: pointer;
+   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
+}
+
+.input-item button:hover {
+    background-color: #4B252C; 
+    color: #f0f0f0;   
+}
+
+.input-item h1{
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.input-item h4{
+    background-color: #6d415fb9;
+    padding: 20px;
+    margin-right: 35%;
+    margin-left: 35%;
+    margin-bottom: 10px;  
+
+}
+.footer {
+    background-color: rgba(59, 25, 25, 0.733);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid hsl(0, 5%, 4%);
+    padding: 5px;
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 10px;
+    position: relative;
+    transition: width 1.5s;
+}
+
+.input{
+    margin: 10px, 50px;
+    margin-left: 20px;
+    width: 100%;
+    color: #666;
+    border: none;
+    background: transparent;
+    outline: none;
+    transition-delay: 0.5s;
+}
+
+/* ------------------ */
+
+.cocktail-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .cocktail-card {
+    width: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .cocktail-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .cocktail-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .cocktail-card p {
+    font-size: 1em;
+    color: #666;
+  }
+  
