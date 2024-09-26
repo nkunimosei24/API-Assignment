@@ -4,7 +4,13 @@ document.querySelector(".primary-btn").addEventListener("click", function (e) {
     e.preventDefault(); // Prevent form submission
   
     const inputValue = document.querySelector(".input").value;
+    const existingContainer = document.querySelector('.cocktail-container');
     
+    // Remove previous results if they exist
+    if (existingContainer) {
+      existingContainer.remove();
+    }
+  
     // Fetch cocktail data from TheCocktailDB API
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?f=${inputValue}`)
       .then(response => response.json())
@@ -50,4 +56,3 @@ document.querySelector(".primary-btn").addEventListener("click", function (e) {
       })
       .catch(error => console.error('Error fetching data:', error));
   });
-  

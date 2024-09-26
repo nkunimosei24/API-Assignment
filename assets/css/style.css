@@ -25,39 +25,40 @@
         display: flex;
         gap: 20px;
         cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;  
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.s ease;  
     margin: 40px;
 }
 
 .primary-btn {
-    background-color: hsl(0, 5%, 85%);  
+    padding: 5px 5px;
+    font-size: 1rem;
+    background-color: #690d0dec;
+    color: white;
     border: none;
-    border-radius: 10px;
-    padding: 5px;
-    font-weight: bold;
-    font-size: 15px;
+    border-radius: 5px;
 
     
 }
 
 
 .secondary-btn {
-    background-color: #F7F9F8; 
+    background-color: #690d0dfd; 
     border: none;
     border-radius: 10px;
     padding: 20px;
     font-weight: bold;
     font-size: 15px;
+    color: wheat;
 }
 .primary-btn:hover {
-    background-color: black;  /* Darker green on hover */
+    background-color: #B15C3F;  /* Darker green on hover */
     color: white;
-    transform: scale(1.1);  /* Slightly larger scale effect */
+    transform: scale(0.9);  /* Slightly larger scale effect */
 }
 
 /* Hover Effect for Secondary Button */
 .secondary-btn:hover {
-    background-color: black;  /* Darker yellow on hover */
+    background-color: #B15C3F;  /* Darker yellow on hover */
     color: white;
     transform: scale(1.1);  /* Slightly larger scale effect */
 }
@@ -77,7 +78,7 @@ nav {
     display: flex;  /* Flexbox for side-by-side layout */
     align-items: center;  /* Align items vertically */
     justify-content: flex-start;  /* Align image and text to the left */
-    background-color:#5c5a5a1e;
+    background-color: rgba(245, 222, 179, 0.219);
     padding: 10px;
 }
 
@@ -138,44 +139,6 @@ width: 20%;
 
 }
 
-.input-item {
-    font-size: 30px;
-    color: white;
-    padding: 10px;
-    
-}
-
-.input-item button{
-   font-size: 16px;
-   width: 150px;
-   background-color: beige;
-   color: black;
-   border-radius: 3px;
-   font-weight: bold;
-   height: 50px; 
-   margin: 20px;
-   cursor: pointer;
-   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
-}
-
-.input-item button:hover {
-    background-color: #4B252C; 
-    color: #f0f0f0;   
-}
-
-.input-item h1{
-    font-size: 70px;
-    margin-bottom: 10px;
-}
-
-.input-item h4{
-    background-color: #6d415fb9;
-    padding: 20px;
-    margin-right: 35%;
-    margin-left: 35%;
-    margin-bottom: 10px;  
-
-}
 .footer {
     background-color: rgba(59, 25, 25, 0.733);
     color: white;
@@ -189,24 +152,21 @@ width: 20%;
 .search-container {
     display: flex;
     align-items: center;
-    border: 1px solid hsl(0, 5%, 4%);
     padding: 5px;
-    width: 300px;
+    width: 250px;
     height: 50px;
-    border-radius: 50px;
     margin: 10px;
     position: relative;
     transition: width 1.5s;
 }
 
 .input{
-    margin: 10px, 50px;
     margin-left: 20px;
     width: 100%;
+    padding: 20px;
     color: #666;
-    border: none;
+    border: 2px solid;
     background: transparent;
-    outline: none;
     transition-delay: 0.5s;
 }
 
